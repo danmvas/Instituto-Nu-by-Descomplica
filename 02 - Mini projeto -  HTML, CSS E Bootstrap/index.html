@@ -1,28 +1,258 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Aluguel de roupas</title>
+    <title>Loja de Brinquedos</title>
+    <!-- Adicione o link para o arquivo Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <!-- Adicione o link para o arquivo CSS personalizado -->
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
-      <h1>Alugue <i>aquele</i> look!</h1>
-    </header>
+    <!-- Barra de Navegação -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-info">
+      <div class="container">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#quem-somos">Quem Somos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#nosso-time">Nosso Time</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#nossos-produtos">Nossos Produtos</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
 
-    <section>
-      <h2>Olha como é fácil</h2>
-      <p>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga nulla
-        consectetur tenetur suscipit labore, enim praesentium sint ipsa magnam
-        fugiat illum distinctio velit sequi ad voluptatibus molestiae vel minima
-        blanditiis.
-        <br><br>
-        <a href="https://br.lipsum.com/feed/html"></a>
-        <hr>
-      </p>
-      <img src="vestido_terno.png" alt="">
+    <!-- Carousel -->
+    <section class="carousel mt-4">
+      <div
+        id="carouselExampleIndicators"
+        class="carousel slide"
+        data-ride="carousel"
+      >
+        <ol class="carousel-indicators">
+          <li
+            data-target="#carouselExampleIndicators"
+            data-slide-to="0"
+            class="active"
+          ></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="img/brincando.jpg"
+              class="d-block w-100"
+              alt="Brinquedo 1"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <p>Brinque e aprenda com diversão!</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="img/familia_brincando.jpg"
+              class="d-block w-100"
+              alt="Brinquedo 2"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <p>Diversão garantida para todas as idades</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="img/criancas_brincando.jpg"
+              class="d-block w-100"
+              alt="Brinquedo 3"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <p>Brinquedos educativos para o desenvolvimento infantil</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="img/crianca_sorrindo.jpg"
+              class="d-block w-100"
+              alt="Brinquedo 4"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <p>Presenteie com sorrisos!</p>
+            </div>
+          </div>
+        </div>
+        <a
+          class="carousel-control-prev"
+          href="#carouselExampleIndicators"
+          role="button"
+          data-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Anterior</span>
+        </a>
+        <a
+          class="carousel-control-next"
+          href="#carouselExampleIndicators"
+          role="button"
+          data-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Próximo</span>
+        </a>
+      </div>
     </section>
-    <footer><p>Desenvolvido por Daniella Vasconcellos</p></footer>
+
+    <!-- Quem Somos -->
+    <section id="quem-somos" class="about-us mt-4">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-8">
+            <h2>Quem Somos</h2>
+            <p>
+              Nossa loja é apaixonada por brinquedos e acreditamos no poder da
+              imaginação e criatividade das crianças. Desde a nossa fundação, há
+              mais de 20 anos, buscamos oferecer os melhores e mais seguros
+              brinquedos para proporcionar momentos de alegria e aprendizado
+              para todas as crianças.
+            </p>
+          </div>
+          <div class="col-md-3">
+            <img
+              src="img/loja.png"
+              class="img-fluid rounded-circle logo"
+              alt="Loja de Brinquedos"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção 4: Nosso Time -->
+    <section id="nosso-time" class="our-team mt-4">
+      <div class="container">
+        <h2>Nosso Time</h2>
+        <div class="row">
+          <div class="col-md-3 team-member">
+            <img
+              src="img/thispersondoesnotexist.jpg"
+              class="img-fluid rounded-circle"
+              alt="Membro do Time 1"
+            />
+            <p>Gerente de Marketing</p>
+          </div>
+          <div class="col-md-3 team-member">
+            <img
+              src="img/thispersondoesnotexist1.jpg"
+              class="img-fluid rounded-circle"
+              alt="Membro do Time 2"
+            />
+            <p>Analista de Vendas</p>
+          </div>
+          <div class="col-md-3 team-member">
+            <img
+              src="img/thispersondoesnotexist2.jpg"
+              class="img-fluid rounded-circle"
+              alt="Membro do Time 1"
+            />
+            <p>Designer Gráfico</p>
+          </div>
+          <div class="col-md-3 team-member">
+            <img
+              src="img/thispersondoesnotexist3.jpg"
+              class="img-fluid rounded-circle"
+              alt="Membro do Time 1"
+            />
+            <p>Gerente de Estoque</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção 5: Nossos Produtos -->
+    <section id="nossos-produtos" class="our-products mt-4">
+      <div class="container">
+        <h2>Nossos Produtos</h2>
+        <div class="row">
+          <div class="col-md-4 product-card">
+            <img
+              src="img/construcao.png"
+              class="img-fluid"
+              alt="Kit de Construção Criativa"
+            />
+            <p>
+              Este kit de construção criativa vem com várias peças coloridas que
+              permitem que as crianças construam diferentes formas e estruturas.
+              Estimula a criatividade, coordenação motora e a resolução de
+              problemas. Indicado para crianças a partir de 3 anos.
+            </p>
+            <p>R$ 49,90</p>
+          </div>
+          <div class="col-md-4 product-card">
+            <img
+              src="img/tabuleiro.png"
+              class="img-fluid"
+              alt="Jogo de Tabuleiro Aventura na Selva"
+            />
+            <p>
+              Embarque em uma emocionante aventura na selva com esse jogo de
+              tabuleiro. Cada jogador enfrentará desafios e mistérios para
+              chegar ao tesouro escondido. Ideal para jogar em família ou com
+              amigos. Indicado para crianças a partir de 6 anos.
+            </p>
+            <p>R$ 39,90</p>
+          </div>
+          <div class="col-md-4 product-card">
+            <img
+              src="img/instrumento.png"
+              class="img-fluid"
+              alt="Conjunto de Instrumentos Musicais"
+            />
+            <p>
+              Esse conjunto de instrumentos musicais é perfeito para incentivar
+              o interesse musical das crianças. Inclui tambor, pandeiro, maracas
+              e apitos coloridos. Ótimo para desenvolver a coordenação motora e
+              o senso rítmico. Indicado para crianças a partir de 3 anos.
+            </p>
+            <p>R$ 29,90</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção 6: Rodapé -->
+    <footer class="footer mt-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 contact-info">
+            <p>
+              Endereço: Rua dos Brinquedos, 123 - Cidade Feliz - Estado Alegre
+            </p>
+            <p>Telefone: (XX) XXXX-XXXX</p>
+          </div>
+          <div class="col-md-6 social-media">
+            <a href="#" target="_blank"
+              ><img src="facebook.png" alt="Facebook"
+            /></a>
+            <a href="#" target="_blank"
+              ><img src="instagram.png" alt="Instagram"
+            /></a>
+            <!-- Adicione mais redes sociais aqui -->
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Adicione o link para o arquivo Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   </body>
 </html>

@@ -1,5 +1,9 @@
 # Projeto Experiência do Usuário
 
+Nome: Daniella M Vasconcellos
+
+Email: <daniellavasconc@gmail.com>
+
 ## 1. Qual é o problema?
 
 O problema a ser resolvido é o seguinte:
